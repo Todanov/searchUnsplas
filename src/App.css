@@ -1,0 +1,82 @@
+.App{
+  display: grid;
+  background: rgb(196, 185, 185);
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 40px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  
+}
+
+input{
+  width:400px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+input[placeholder] {
+  padding-left: 25px;
+  font-size: 15px;
+}
+
+button {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  background: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 15px;
+
+}
+
+.image-grid{
+  display: grid;
+  grid-gap:15px;
+  grid-template-columns: repeat( auto-fill, minmax(250px,1fr));
+  grid-auto-rows: minmax(50px,200px);
+  margin: 10px;
+}
+
+.image{
+  background: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1)
+    0 2px 4px -1px rgba(0,0,0,0.86) ;
+  transition: 0.3s cubic-bezier(0.68,-0.55,0.265,1.55) transform;
+}
+
+.image:hover{
+  transform: translateY(-2px);
+}
+
+.image img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image:nth-child(6n){
+  grid-column-end: span 5;
+}
+
+
+.error{
+  background: rgb(201, 88, 88);
+  color:white;
+  border-radius: 15px;
+  
+}
